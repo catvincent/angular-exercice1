@@ -1,0 +1,70 @@
+
+/* component selector styles */
+:host {
+  width: 100%;
+}
+
+ .textContent {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: black;
+    margin-bottom: 50px;
+  }
+
+  div {
+    width: 100%;
+  }
+  
+  .inputNameContent input{
+    margin-left: 16%;
+    width: 50%;
+  }
+
+  .textSizeContent input{
+    margin-left: 12%;
+    width: 40px;
+  }
+
+  select {
+    margin-left: 8%;
+    padding: 10px;
+  }
+
+  p {
+    font-family:  Verdana, Helvetica, Arial, sans-serif;
+    color: black;
+  }  
+ 
+ form {
+  width: 100%;
+ }
+
+ input[type="text"] {
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+
+.textAlignContent input {
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 30px;
+  }
+  .inputNameContent input{
+    margin-left: 0%;
+    width: 80%;
+  }
+  .textAlignContent input {
+    margin-left: 5%;
+  }
+}

@@ -1,0 +1,29 @@
+<div class="textContent">
+    <h1 [style]="setChosenStyles()">Bonjour {{ theNameToDisplay | uppercase }}!</h1>
+</div>
+<form>
+    <div class="inputNameContent">
+      <p>Votre nom : 
+        <input type="text" name="theNameToDisplay" [(ngModel)]="theNameToDisplay" placeholder="saisisser votre nom" />
+      </p>
+    </div>
+    <div class="textFontContent">
+      <p>Police d'affichage : 
+        <select  [(ngModel)]="selectedPolice" name="selectedPolice">
+            <option *ngFor="let police of polices" [ngValue]="police">{{ police }}</option>
+        </select>        
+      </p>
+    </div>
+    <div class="textSizeContent">
+      <p>Taille du texte :
+        <input type="text" pattern="[0-9]*" name="theNameSize" maxlength= "2" [(ngModel)]="theNameSize" placeholder="40" />px
+      </p>
+    </div>
+    <div class="textAlignContent">
+      <p>Alignement :
+        <input type="radio" name="textAlignement" [value]="left" [(ngModel)]="selectedAlignement">&agrave; gauche
+        <input type="radio" name="textAlignement" [value]="center" [(ngModel)]="selectedAlignement">centr&eacute;
+        <input type="radio" name="textAlignement" [value]="right" [(ngModel)]="selectedAlignement">&agrave; droite
+      </p>
+    </div>
+  </form>
